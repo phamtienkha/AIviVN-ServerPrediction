@@ -1,5 +1,5 @@
 # AIviVN-ServerPrediction
-[AIviVI-ServerPrediction Contest] 1st place Solution
+[AIviVN-ServerPrediction Contest] 1st place Solution
 
 
 DATASET
