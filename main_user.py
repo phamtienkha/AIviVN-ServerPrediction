@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 from Naive24_user import Naive24_user
 
 
-# df = pd.read_csv('train-user_last5500.csv')
 df = pd.read_csv('train-user_last6000_cut.csv')
 server_list = list(df.SERVER_NAME.unique())[:]
 
@@ -57,11 +56,6 @@ for server in server_list:
         loss_list.append(loss_mean)
 
     print(server, loss, loss_mean)
-
-    # x = [i for i in range(len(data_cur))]
-    # plt.plot(x, data_cur)
-    # plt.plot(x[-predict_len:], prediction)
-    # plt.show()
 
 print(high_server_list)
 print(np.mean(loss_list))
