@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 from Naive24_bandwidth import Naive24_bandwidth
 
 
-# df = pd.read_csv('train-bandwidth_last5500.csv')
 df = pd.read_csv('train-bandwidth_last6000_cut.csv')
 server_list = list(df.SERVER_NAME.unique())[:]
 
@@ -26,11 +25,9 @@ list_hour = [i for i in range(24)]
 output = []
 min_list = []
 mean_list = []
-avgmean_list = []
 high_server_list = []
 too_high_server_list = ['SERVER_ZONE01_023']
 data_dict = {}
-coef_dict = {}
 
 for server in server_list:
     data_cur = df[df.SERVER_NAME == server]
@@ -68,31 +65,11 @@ for server in server_list:
         loss_list.append(loss_mean)
     print(server, loss, loss_mean)
 
-    # loss_hour = []
-    # for i in range(24):
-    #     loss_hour.append(np.mean([MAPE([test[j]], [prediction[j]]) for j in range(predict_len) if j % 24 == i]))
-    #     print(i, np.mean([MAPE([test[j]], [prediction[j]]) for j in range(predict_len) if j % 24 == i]))
-    # plt.plot(range(24), loss_hour)
-    # plt.show()
-
-    # loss_cur = []
-    # for i in range(predict_len):
-    #     loss_cur.append(MAPE([test[i]], [prediction[i]]))
-    # x = [i for i in range(predict_len)]
-    # plt.plot(x, loss_cur)
-    # plt.show()
-
-    # x = [i for i in range(len(data_cur))]
-    # plt.plot(x, data_cur)
-    # plt.plot(x[-predict_len:], prediction)
-    # plt.show()
-
-print(min_list)
-print(high_server_list)
-print(avgmean_list)
-print(too_high_server_list)
-print(np.mean(loss_list))
-print('Done!')
+# print(min_list)
+# print(high_server_list)
+# print(too_high_server_list)
+# print(np.mean(loss_list))
+# print('Done!')
 
 for server in server_list:
     print(server)
