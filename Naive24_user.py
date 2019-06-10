@@ -19,8 +19,6 @@ class Naive24_user():
         prediction = [0] * predict_len
         for i in range(predict_len):
             remainder_cur = (data_len + i) % 24
-            # prediction[i] = min_list[remainder_cur]
-            # if remainder_cur in [3 + remainder_data, 4 + remainder_data, 5 + remainder_data]:
             if remainder_cur in [19, 20, 21]:
                 prediction[i] = 1.5 * min_list[remainder_cur]
             else:
@@ -46,8 +44,6 @@ class Naive24_user():
         prediction = [0] * predict_len
         for i in range(predict_len):
             remainder_cur = (data_len + i) % 24
-            # prediction[i] = min_list[remainder_cur]
-            # if remainder_cur in [3 + remainder_data, 4 + remainder_data, 5 + remainder_data]:
             if remainder_cur in [19, 20, 21]:
                 prediction[i] = 1.5 * min_list[remainder_cur]
             else:
