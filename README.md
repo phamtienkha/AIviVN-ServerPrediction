@@ -1,10 +1,10 @@
 # AIviVN-ServerPrediction
-** [AIviVI-ServerPrediction Contest] 1st place solution ** 
+[AIviVI-ServerPrediction Contest] 1st place solution
 
 
 DATASET
 
-You can download bandwidth and user datasets in the following links.
+You can download formatted bandwidth and user datasets in the following links.
 - train-bandwidth_last6000_cut.csv: https://drive.google.com/file/d/1WgDPDEdCocN3sdwXPsxgRfkyRbuD7uBM/view?usp=sharing
 - train-user_last6000_cut.csv: https://drive.google.com/file/d/14_2jpEIZzHiSZH9WGtRYnFfcOUzVihiA/view?usp=sharing
 
