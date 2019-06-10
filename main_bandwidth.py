@@ -65,11 +65,11 @@ for server in server_list:
         loss_list.append(loss_mean)
     print(server, loss, loss_mean)
 
-# print(min_list)
-# print(high_server_list)
-# print(too_high_server_list)
-# print(np.mean(loss_list))
-# print('Done!')
+print(min_list)
+print(high_server_list)
+print(too_high_server_list)
+print(np.mean(loss_list))
+print('Done!')
 
 for server in server_list:
     print(server)
